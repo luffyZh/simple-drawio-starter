@@ -1,0 +1,12 @@
+{
+  "name": "simple-drawio-starter",
+  "version": "0.0.1",
+  "main": "src/main/webapp/index.html",
+  "scripts": {
+    "start": "cd src/main/webapp && serve",
+    "build": "source ~/.bash_profile && cd etc/build && ant"
+  },
+  "repository": "git@github.com:luffyZh/simple-drawio-starter.git",
+  "author": "luffyZh <zhoudeyou945@126.com>",
+  "license": "MIT"
+}
