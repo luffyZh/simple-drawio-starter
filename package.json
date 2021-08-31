@@ -1,12 +1,34 @@
 {
   "name": "simple-drawio-starter",
-  "version": "0.0.1",
-  "main": "src/main/webapp/index.html",
+  "version": "0.1.0",
+  "author": "luffyZh <zhoudeyou@126.com>",
+  "keywords": [
+    "drawio",
+    "react",
+    "next.js"
+  ],
   "scripts": {
-    "start": "cd src/main/webapp && serve",
-    "build": "source ~/.bash_profile && cd etc/build && ant"
+    "start": "next dev",
+    "build": "next build",
+    "prod": "next start",
+    "drawio-dev": "cd drawio-project/src/main/webapp && serve",
+    "drawio-build": "cd drawio-project/etc/build && ant",
+    "gen-drawio": "rm -rf public/drawio && cp -r drawio-project/src/main/webapp public/drawio",
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build"
   },
-  "repository": "git@github.com:luffyZh/simple-drawio-starter.git",
-  "author": "luffyZh <zhoudeyou945@126.com>",
-  "license": "MIT"
+  "dependencies": {
+    "@next/bundle-analyzer": "^11.0.1",
+    "antd": "^4.16.13",
+    "next": "^11.0.2-canary.17",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/react": "17.0.15",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
+  }
 }
