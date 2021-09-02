@@ -10,6 +10,7 @@
   "scripts": {
     "start": "next dev",
     "build": "next build",
+    "prebuild": "yarn gen-drawio",
     "prod": "next start",
     "drawio-dev": "cd drawio-project/src/main/webapp && serve",
     "drawio-build": "cd drawio-project/etc/build && ant",
