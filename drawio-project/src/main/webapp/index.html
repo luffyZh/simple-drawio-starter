@@ -262,9 +262,7 @@
 				mxForceIncludes = true;
 			}
 
-			/**
-			 * 本地开发文件指向 
-			 **/
+			// ====> 开发模式文件指向本地
 			if (location.hostname == 'localhost' || location.hostname == '127.0.0.1')
 			{
 				drawDevUrl = `http://${location.host}/`;
@@ -274,6 +272,7 @@
 				// Forces includes for dev environment in node.js
 				mxForceIncludes = true;
 			}
+			// ====> 开发模式文件指向本地
 
 			mxscript(drawDevUrl + 'js/PreConfig.js');
 			mxscript(drawDevUrl + 'js/diagramly/Init.js');
