@@ -3686,6 +3686,17 @@ App.prototype.showSplash = function(force)
 			this.showSplash();
 		}));
 	}
+	/**
+	 * 如果有id，表示打开了一个存在的文档，进入编辑模式
+	 */
+	else if (urlParams['id']) {
+		const mockFile = {
+      title: 'luffyzh.drawio',
+      data: '<mxfile host="localhost" modified="2021-09-02T09:50:39.574Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="PyBU88KGLdBE5FU7fpPf" version="@DRAWIO-VERSION@" type="device"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc5swEP41PLbD4WDnsThx0tbNpE3aTB9lkIVqwVIhfOTXdzHCgPH4aOscnvjBo12WlbTft4dtOP1ofiVJEn6BgArDNoO54VwYtn3WNfE7VywKhduzCwWTPChUVqW4449UK/V7LOMBTRuGCkAonjSVPsQx9VVDR6SEWdNsDKK5a0IYbSnufCLa2gceqLDQ9uxupb+mnIXlzpZ7XjyJSGmsb5KGJIBZTeVcGk5fAqhiFc37VOSxK+Py8HHxIIYT9+rT1/Q3+e59vr/58a5wNjjkldUVJI3V/3WtsZwSkel46buqRRlACVkc0NyJaTheqCKBSwuXv6hSCw04yRSgCqQKgUFMxBAg0XZjiJU2s3KZxsGHHFiURwL8SaEacCH0Hihp+x5KqZIwWWGXO1gBkRsLMqLCI/6ELQ/aBwESH8UQ09xVgGTQd6kOd1lpvT1jqzFIIZM+3WLnaIoTyeg2f25hl5+vxlON3BWFiCq5QANJBVF82iQz0TnBVnYV7rjQ0B9AA6dFA5GNx4vHcAsbciRmIVf0LiHLkMywfjQZUkceL+cxQdJU47YD1sNgmVKp6HxrIMunrs5mXc56WpxVtcEqEz6s1YWOeaTQd1qh/4nl8i0J/yUJ3T2TsOxRO7NQk6Ukxt5JqT3dAsd7VSYwHqd4sHXqrDb8ezadtdh0Ay0y7cbjVdPtmcjUPYxL1ovnktvi0pBEiWG7AsPgjSSuWL5KRMYYkgXdxYYzaNeuEKJRlu5uFw2McwYNSMRFHq9rKqZUcZ9saCpEcIb7XvgIN5WbyYNb8pih5FbS/ZKsWH+P2Gy6zWazkuvdxtzQbXrH6jbdFqa3iF4BnW2KJb4n1vEdew2E8+du+b19ivSrLsFP3vHLarq75Vt7lmnNHvO9g58GgV7+FHC+10z5NgYch2H2qQ0C5QlrfPIyMWpPAqNMxstBADL1NglsmwTsTU3oSSeBshDWQP1GE8IRTHN4inPA+i//jvPcc0BZKZoQiDymtllk2IlhsD6LOdbxMECx+m+2KIXVH9zO5R8=</diagram></mxfile>'
+    }
+		const file = new LocalFile(this, mockFile.data, mockFile.title, this.mode);
+		this.loadFile(`-1`, true, file);
+	}
 	else if (!mxClient.IS_CHROMEAPP && (this.mode == null || force))
 	{
 		var rowLimit = (serviceCount == 4) ? 2 : 3;

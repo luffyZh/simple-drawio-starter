@@ -36,5 +36,6 @@
     "comma-spacing": [1, { "before": false, "after": true }],
     "block-spacing": [1, "always"],
     "no-else-return": 1
-  }
+  },
+  "ignorePatterns": ["**/drawio-project"]
 }
