@@ -1031,7 +1031,7 @@
 				}
 			}
 		}
-		
+		// ========= 这里是侧边栏 library =========== //
 		this.addGeneralPalette(this.customEntries == null);
 		this.addMiscPalette(false);	
 		this.addAdvancedPalette(false);

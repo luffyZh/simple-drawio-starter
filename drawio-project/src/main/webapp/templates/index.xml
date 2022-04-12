@@ -112,6 +112,14 @@
 <template url="cloud/ibm/ibm_private_cloud.xml" name="Ibm private cloud" libs="general;ibm" tags="Ibm;private;cloud"/>
 <template url="cloud/ibm/ibm_vcenter_server_platform.xml" name="Ibm vcenter server platform" libs="general;ibm" tags="Ibm;vcenter;server;platform"/>
 <template url="cloud/ibm/ibm_vpc_architecture.xml" name="Ibm vpc architecture" libs="general;ibm" tags="Ibm;vpc;architecture"/>
+<template url="custom/classes.xml" title="classDiagram" libs="general;uml" tags="classDiagram;Classes"/>
+<template url="custom/flowchart.xml" title="flowchart" libs="general;flowchart" tags="flowchart;Flowchart"/>
+<template url="custom/orgchart.xml" title="orgChart" libs="general;custom;arrows" tags="orgChart;Orgchart"/>
+<template url="custom/swimlanes.xml" title="swimlaneDiagram" libs="general;flowchart;bpmn" tags="swimlaneDiagram;Swimlanes"/>
+<template url="custom/erd.xml" title="entityRelationshipDiagram" libs="general;er" tags="entityRelationshipDiagram;Erd"/>
+<template url="custom/sequence.xml" title="Sequence Diagram" tags="Sequence;Diagram;Sequence"/>
+<template url="custom/kanban.xml" title="Simple Kanban Board" tags="Simple;Kanban;Board;Kanban"/>
+<template url="custom/cross.xml" title="Cross-Functional Flowchart" tags="Cross-Functional;Flowchart;Cross"/>
 <template url="engineering/cabinet.xml" name="Cabinet" libs="general;cabinets" tags="Cabinet"/>
 <template url="engineering/electrical_1.xml" name="Electrical 1" libs="general;electrical" tags="Electrical"/>
 <template url="engineering/electrical_2.xml" name="Electrical 2" libs="general;electrical" tags="Electrical"/>

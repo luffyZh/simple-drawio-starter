@@ -12,7 +12,7 @@
     "build": "next build",
     "prebuild": "yarn gen-drawio",
     "prod": "next start",
-    "drawio-dev": "cd drawio-project/src/main/webapp && serve",
+    "drawio-dev": "cd drawio-project/src/main/webapp && serve -p 9099",
     "drawio-build": "cd drawio-project/etc/build && ant",
     "gen-drawio": "rm -rf public/drawio && cp -r drawio-project/src/main/webapp public/drawio",
     "lint": "next lint",
