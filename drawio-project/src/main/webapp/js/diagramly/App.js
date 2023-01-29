@@ -5610,31 +5610,6 @@ App.prototype.loadLibraries = function(libs, done)
 							var url = decodeURIComponent(id.substring(1));
 							if (!this.isOffline())
 							{
-								// // Declare db instance
-								// var db = new Dexie("ClibsDB");
-								// db.version(1).stores({
-								// 	clibs: "++id, url, data",
-								// });
-								// if (urlParams['clibs']) {
-								// 	const clibUrl = decodeURIComponent(urlParams['clibs']).slice(1);
-								// 	db.clibs.get({ url: clibUrl }).then(lib => {
-								// 		if (lib.id) {
-								// 			console.log(url, 989787666);
-								// 			// 存在，直接读缓存
-								// 			onload(new UrlLibrary(this, lib.data, url));
-								// 		}
-								// 	})
-								// 	// fetch('http://localhost:9099/files/Bioicons-Nucleic_acids.xml')
-								// 	// 	.then(res => res.text())
-								// 	// 	.then(data => {
-								// 	// 		// Define Database Schema
-								// 	// 		db.version(1).stores({
-								// 	// 			clibs: "++id, url, data",
-								// 	// 		});
-								// 	// 		db.clibs.add({ url: clibUrl, data: data }).then(function (id) {
-								// 	// 		});
-								// 	// 	});
-								// }
 								this.loadTemplate(url, mxUtils.bind(this, function(text)
 								{
 									if (text != null && text.length > 0)
