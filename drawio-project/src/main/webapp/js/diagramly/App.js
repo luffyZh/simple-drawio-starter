@@ -52,12 +52,6 @@ App = function(editor, container, lightbox)
 		});
 	}
 
-	// fetch('../../files/Bioicons-Nucleic_acids.xml')
-	// 	.then(res => res.text())
-	// 	.then(data => {
-	// 		this.loadLibrary(new LocalLibrary(this, data, 'ddd.xml'));
-	// 	});
-
 	// Logs changes to autosave
 	this.editor.addListener('autosaveChanged', mxUtils.bind(this, function()
 	{
