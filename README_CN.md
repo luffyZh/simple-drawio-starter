@@ -36,7 +36,7 @@
 
 ## DrawIO 简介
 
-既然是基于 DrawIO 进行二开，首先就来了解一下 DrawIO 到底是什么，跟着笔者视角先去 [DrawIO 官网](https://www.diagrams.net/)去看一圈，官网首页截图如下所示：
+既然是基于 DrawIO 进行二开,就需要了解一下 DrawIO 到底是什么，首先跟着笔者视角先去 [DrawIO 官网](https://www.diagrams.net/)去看一圈，官网首页截图如下所示：
 
 ![DrawIO 官网首页](https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10679615008/b758/52f1/4b75/94d26321e58a22ccf005540afc2d618b.png)
 
