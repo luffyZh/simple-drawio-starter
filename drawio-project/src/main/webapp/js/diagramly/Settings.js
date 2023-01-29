@@ -218,6 +218,7 @@ var mxSettings =
 	},
 	getDefaults: function()
 	{
+		// ====== 这里是默认加载libraries的地方 ====== //
 		return {
 			language: '',
 			configVersion: Editor.configVersion,

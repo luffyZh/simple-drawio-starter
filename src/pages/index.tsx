@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@/styles/icons/logo.svg';
@@ -5,6 +6,12 @@ import { Button } from 'antd';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+
+  useEffect(() => {
+    fetch('http://localhost:3000/files/Bioicons-Nucleic_acids.xml')
+      .then(res => res.text())
+      .then(text => console.log(text));
+  }, []);
 
   const drawioUrl = process.env.NODE_ENV === 'development'
     ? '/drawio?dev=1' : '/drawio';
